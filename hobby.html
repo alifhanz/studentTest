@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #93CAED;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FF1493;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FF00FF;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FF00FF;
+  color: white;
+}
+
+.textStyle{
+	font-style: oblique;
+}
+
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+<BASE href="file:///C:/Users/alif/Desktop/Ain/">
+<BASE src="file:///C:/Users/alif/Desktop/Ain/">
+<!---Nav Bar--->
+<div class="topnav">
+  <a href="./index.html">HOMEPAGE</a>
+  <a href="./biodata.html">BIODATA</a>
+  <a href="./experience.html">EXPERIENCE</a>
+  <a class="active" href="./hobby.html">HOBBY</a>
+  <a href="./contact.html">CONTACT ME</a>
+</div>
+<!--- End of Nav Bar--->
+
+<center><h1 style="color: #FF1493">MY HOBBY</h1></center>
+
+<br>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="./image/hb1.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+  <img class="mySlides" src="./image/hb2.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+  <img class="mySlides" src="./image/hb3.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+  <img class="mySlides" src="./image/bio.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+
+  <button class="w3-button w3-blue w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-blue w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<br>
+<p>Cooking and baking is my passion. During my leisure time, i love to cook and bake. It gives a me satisfaction when seeing my family and friends enjoying my cooking. I will ask them how my cooking was and of course it is for me to keep imrpovise my cooking so that it will taste much better than before.</p>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

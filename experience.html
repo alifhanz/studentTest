@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #93CAED;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FF1493;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FF00FF;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FF00FF;
+  color: white;
+}
+
+.textStyle{
+	font-style: oblique;
+}
+
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+<BASE href="file:///C:/Users/alif/Desktop/Ain/">
+<BASE src="file:///C:/Users/alif/Desktop/Ain/">
+<!---Nav Bar--->
+<div class="topnav">
+  <a href="./index.html">HOMEPAGE</a>
+  <a href="./biodata.html">BIODATA</a>
+  <a class="active" href="./biodata.html">EXPERIENCE</a>
+  <a href="./hobby.html">HOBBY</a>
+  <a href="./contact.html">CONTACT ME</a>
+</div>
+<!--- End of Nav Bar--->
+
+<center><h1 style="color: #FF1493">MY EXPERIENCE</h1></center>
+
+<br>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="./image/exp1.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+  <img class="mySlides" src="./image/exp2.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+  <img class="mySlides" src="./image/exp3.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+  <img class="mySlides" src="./image/exp4.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+  <img class="mySlides" src="./image/exp5.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+
+  <button class="w3-button w3-blue w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-blue w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<br>
+<p>During my semester break, i used to have a business. I sell food back then. It was a really tiring but its quite fun somehow. It teach me how to deal politely with people and how to deal when the customer is mad and throwing something bad at you.</p>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

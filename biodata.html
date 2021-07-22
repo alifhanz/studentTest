@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #93CAED;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FF1493;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FF00FF;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FF00FF;
+  color: white;
+}
+
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+
+<BASE href="file:///C:/Users/alif/Desktop/Ain/">
+<BASE src="file:///C:/Users/alif/Desktop/Ain/">
+<!---Nav Bar--->
+<div class="topnav">
+  <a href="./index.html">HOMEPAGE</a>
+  <a class="active" href="./biodata.html">BIODATA</a>
+  <a href="./experience.html">EXPERIENCE</a>
+  <a href="./hobby.html">HOBBY</a>
+  <a href="./contact.html">CONTACT ME</a>
+</div>
+<!--- End of Nav Bar--->
+
+<center><h1 style="color: #FF1493">MY BIODATA</h1></center>
+
+<br>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="./image/ain.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+  <img class="mySlides" src="./image/uitm.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+  <img class="mySlides" src="./image/bio.jpg" style="width: 50%; margin-left: auto; margin-right: auto">
+
+  <button class="w3-button w3-blue w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-blue w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<br>
+<!---<center><img src="./ain.jpg" alt="Girl in a jacket"></center>--->
+<p>My name is Ain’ Fasihah Mas Hasan. I am turning 23 this year. I was born at Century Specialist Maternity Centre in Johor Bharu on 24 September 1998. I am the only child in family. After SPM, i pursue my study in Diploma level at Uitm Machang in Banking Studies. Now, i am struggling with degree online learning in Business Administration (Hons) Finance in Uitm Kota Bharu. I am on fourth semester. I love to cook during my free time. It gives me satisfaction to feed people with my own cooking. I also love to listen to music as it will make me calm</p>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
